@@ -29,6 +29,7 @@ figure > img {
   display: block;
 }
 
+
 /* palette colori */
 
 :root {
@@ -99,6 +100,15 @@ figure > img {
   padding: 0 18px;
 }
 
+.no-padding {
+  padding: 0;
+}
+
+.blue {
+  background-color: var(--blue);
+  color: white;
+}
+
 /* header */
 .page-header {
   background-color: var(--blue);
@@ -112,6 +122,26 @@ figure > img {
   align-items: center;
 }
 
+/* main  */
+
+/* card  */
+.card{
+  background-color: var(--light-blue);
+  height: 100%;
+}
+.fa-apple {
+  color: white;
+  margin-right: 7px;
+}
+
+.icon-blue{
+  color: var(--blue);
+  font-size: 80px;
+}
+
+.title-card-blue{
+  color: var(--blue);
+}
 /* debug */
 
 .debug .container,
