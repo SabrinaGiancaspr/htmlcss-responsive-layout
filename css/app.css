@@ -12,7 +12,6 @@ ul,
 ol,
 menu {
   list-style: none;
-
 }
 
 img {
@@ -100,13 +99,14 @@ figure > img {
   padding: 0 18px;
 }
 
-.no-padding {
-  padding: 0;
-}
-
-.blue {
+.button-blue {
   background-color: var(--blue);
   color: white;
+  margin-top: 30px;
+  margin-left: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+
 }
 
 /* header */
@@ -122,26 +122,73 @@ figure > img {
   align-items: center;
 }
 
-/* main  */
+/* hero  */
+.hero .col-4 {
+  padding-top: 30px;
+  text-align: center;
+}
 
 /* card  */
-.card{
+.card {
   background-color: var(--light-blue);
   height: 100%;
+  border-radius: 20px;
 }
+
 .fa-apple {
   color: white;
   margin-right: 7px;
 }
 
-.icon-blue{
-  color: var(--blue);
-  font-size: 80px;
+.no-padding {
+  padding: 0;
 }
 
-.title-card-blue{
+.icon-blue {
   color: var(--blue);
+  font-size: 80px;
+  padding-top: 30px;
 }
+
+.title-card-blue {
+  color: var(--blue);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+*[class^='col-'] { 
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+/* main section purple */
+.section-purple {
+  background-color: var(--purple);
+  color: white;
+}
+
+.font-black {
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.bg-card-white {
+  background-color: var(--light);
+}
+
+.fa-arrow-down {
+  color: black;
+  background-color: #9792E4;
+  width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 /* debug */
 
 .debug .container,
