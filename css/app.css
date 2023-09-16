@@ -134,7 +134,9 @@ figure > img {
   height: 100%;
   border-radius: 20px;
 }
-
+.phone{
+  width: 250px;
+}
 .fa-apple {
   color: white;
   margin-right: 7px;
@@ -150,12 +152,15 @@ figure > img {
   padding-top: 30px;
 }
 
-.title-card-blue {
-  color: var(--blue);
+.title-card {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 15px;
   padding-top: 15px;
+}
+
+.blue-color{
+  color: var(--blue);
 }
 
 *[class^='col-'] { 
@@ -167,17 +172,39 @@ figure > img {
 .section-purple {
   background-color: var(--purple);
   color: white;
+  margin-top: 90px;
+  padding-bottom: 120px;
 }
 
-.font-black {
+.font-card {
   color: black;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.font-white{
+  color: white;
+  padding-bottom: 30px;
+  padding-top:90px ;
 }
 
 .bg-card-white {
   background-color: var(--light);
+  margin-top: 100px;
+  padding-left: 20px;
+}
+
+q{
+  display: block;
+}
+
+.quote-card{
+  padding-left: 30px;
+  color: black;
+  text-align: center;
 }
 
 .fa-arrow-down {
@@ -187,6 +214,7 @@ figure > img {
   min-height: 40px;
   border-radius: 50%;
   text-align: center;
+  display: block;
 }
 
 /* debug */
@@ -215,16 +243,30 @@ figure > img {
 
 /* Responsive */
 
-@media (max-width:770px) {
+@media (max-width:768px) {
   .container {
-      width: 100%;
+    width: 100%;
   }
 
   .navbar-list {
-      display: none;
+    display: none;
   }
 
   .hamburger {
-      display: block;
+    display: block;
+  }
+
+  .title-card-blue{
+    padding-right: 0;
+  }
+
+  .col-md{
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 576px){
+  *[class^='col-']{
+    flex-basis: 100%;
   }
 }
