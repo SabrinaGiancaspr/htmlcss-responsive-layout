@@ -111,7 +111,6 @@ figure > img {
   background-color: var(--blue);
   color: white;
   margin-top: 30px;
-  margin-left: 10px;
   padding-left: 40px;
   padding-right: 40px;
 
@@ -329,7 +328,7 @@ q{
   position: relative;
 }
 
-.fa-quote-left{
+.quote-purple{
   position: absolute;
   top: 40px;
   right : 60px;
@@ -340,6 +339,49 @@ q{
 .fa-linkedin{
   padding-right: 5px;
 }
+
+
+/* section get started  */
+.text-center{
+  text-align: center;
+  padding-top: 30PX;
+}
+
+.title-orange{
+  color: var(--yellow);
+  font-size: 60px;
+  padding-bottom: 30px;
+}
+
+.big-button{
+  background-color: white;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0 60px 0 60px;
+  color: var(--purple);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* footer */
+
+.bg-black{
+  background-color: var(--dark-grey);
+  color: white;
+}
+
+.p-footer{
+  padding-bottom: 60px;
+}
+
+.link-footer{
+  text-decoration: underline;
+  color: var(--purple);
+  padding-bottom: 60px;
+}
+
+
+
 /* Responsive */
 
 @media (max-width:768px) {
@@ -354,38 +396,59 @@ q{
   .hamburger {
     display: block;
   }
+
 /* header  */
-  .title-card-blue {
+  .title-card {
     padding-right: 0;
+    padding-left: 0;
   }
-/* main  */
+/* main  section main testimonials */
+
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .section-purple {
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   .bg-card-white {
     margin-top: 0;
+    padding-bottom: 20px;
   }
 
   .fa-arrow-down {
-    margin-left: 313px;
+    margin-left: 300px;
   }
 
-/* section main page cards purple  */
+/* benefits section purple */
+
+  .number{
+    font-size: 60px;
+    padding-top: 20px;
+  }
+
+  .button-purple{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .col-md {
     flex-basis: 100%;
   }
 
   .title-md {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .font-md {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .img-md {
-    width: 500px;
+    width: 570px;
+    padding-top: 80px;
   }
 
   .col-nopadding-md {
@@ -398,17 +461,35 @@ q{
     flex-basis: calc((100% / 12) * 6);
   }
 
+  .name{
+    padding-left: 40px;
+  }    
+
   /* sectio about us  */
+
+  .title-about-us{
+    font-size: 50px;
+  }
+
+  .p-lorem{
+    padding-right: 50px;
+  }
+
   .container-small{
     padding-left: 30px;
     padding-bottom: 50px;
   }
+
+  .quote-purple{
+    right: 26px;
+  }
+  
 }
+
 
 @media (max-width: 576px){
   *[class^='col-']{
     flex-basis: 100%;
-
   }
   
   .name{
@@ -417,8 +498,7 @@ q{
 
   .title-purple{
     padding-left: 100px;
-    
-    padding-right: 150px;
+     padding-right: 150px;
   }
    
   .description-section{
