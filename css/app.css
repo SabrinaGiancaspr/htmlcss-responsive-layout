@@ -78,6 +78,14 @@ figure > img {
   flex-basis: calc((100% / 12) * 12);
 }
 
+.col-9{
+  flex-basis: calc((100% / 12) * 9);
+}
+
+.col-3{
+  flex-basis: calc((100% / 12) * 3);
+}
+
 /* utility classes */
 
 .justify-between {
@@ -109,7 +117,16 @@ figure > img {
 
 }
 
-/* header */
+.button-purple{
+  background-color: var(--purple);
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0 40px 0 40px;
+  color: white;
+}
+
+/* navbar */
 .page-header {
   background-color: var(--blue);
   color: #FFFFFF;
@@ -122,6 +139,11 @@ figure > img {
   align-items: center;
 }
 
+.hamburger {
+  color: #FFFFFF;
+  display: none;
+}
+
 /* hero  */
 .hero .col-4 {
   padding-top: 30px;
@@ -130,13 +152,19 @@ figure > img {
 
 /* card  */
 .card {
-  background-color: var(--light-blue);
+  background-color: white;
   height: 100%;
   border-radius: 20px;
+  padding-left: 20px;
+}
+
+.bg-blue{
+  background-color: var(--light-blue);
 }
 .phone{
   width: 250px;
 }
+
 .fa-apple {
   color: white;
   margin-right: 7px;
@@ -157,9 +185,11 @@ figure > img {
   padding-right: 20px;
   padding-bottom: 15px;
   padding-top: 15px;
+  color: black;
+  text-align: center;
 }
 
-.blue-color{
+.blue-color {
   color: var(--blue);
 }
 
@@ -178,17 +208,15 @@ figure > img {
 
 .font-card {
   color: black;
-  padding-left: 20px;
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 8px;
-  text-align: center;
 }
 
 .font-white{
   color: white;
   padding-bottom: 30px;
-  padding-top:90px ;
+  padding-top:50px ;
 }
 
 .bg-card-white {
@@ -205,6 +233,7 @@ q{
   padding-left: 30px;
   color: black;
   text-align: center;
+  padding-top: 20px;
 }
 
 .fa-arrow-down {
@@ -215,32 +244,102 @@ q{
   border-radius: 50%;
   text-align: center;
   display: block;
+  padding-top: 10px;
+  margin-left: 170px;
+  margin-top: 20px;
 }
 
-/* debug */
-
-.debug .container,
-.debug .container-medium,
-.debug .container-small  {
-  border: 1px solid var(--yellow);
-  padding: 10px;
+/* Testimonial section  */
+.title-purple{
+  color: var(--purple);
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 30px;
 }
 
-.debug .row {
-  border: 1px solid var(--purple);
-  padding: 10px;
+.testimonials{
+  padding-top: 40px;
+  text-align: center;
 }
 
-.debug [class^="col"] {
-  border: 1px solid orange;
-  padding: 10px;
+.bg-purple{
+  background-color: var(--purple);
+  padding-bottom: 20px;
+  color: white;
 }
 
-.hamburger {
-  color: #FFFFFF;
-  display: none;
+.name{
+  text-align: start;
 }
 
+.img-testimonial{
+  width: 213px;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+/* section number-card  */
+.title-white{
+  font-size: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.color-font-purple{
+  color: var(--purple);
+  padding-bottom: 10px;
+  padding-left: ;
+}
+
+.number{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.card-white{
+  padding-bottom: 10px;
+}
+
+/* sectio about us */
+
+.title-about-us{
+  color: var(--purple);
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.padding-top{
+  padding-top: 40px;
+}
+
+.p-lorem{
+  line-height: 30px;
+}
+
+.img-padding{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.postion-relative{
+  position: relative;
+}
+
+.fa-quote-left{
+  position: absolute;
+  top: 40px;
+  right : 60px;
+  font-size: 80px;
+  color: var(--purple);
+}
+
+.fa-linkedin{
+  padding-right: 5px;
+}
 /* Responsive */
 
 @media (max-width:768px) {
@@ -255,18 +354,83 @@ q{
   .hamburger {
     display: block;
   }
-
-  .title-card-blue{
+/* header  */
+  .title-card-blue {
     padding-right: 0;
   }
+/* main  */
+  .section-purple {
+    padding-left: 30px;
+  }
 
-  .col-md{
+  .bg-card-white {
+    margin-top: 0;
+  }
+
+  .fa-arrow-down {
+    margin-left: 313px;
+  }
+
+/* section main page cards purple  */
+  .col-md {
     flex-basis: 100%;
+  }
+
+  .title-md {
+    font-size: 30px;
+  }
+
+  .font-md {
+    font-size: 20px;
+  }
+
+  .img-md {
+    width: 500px;
+  }
+
+  .col-nopadding-md {
+    padding-right: 0 ;
+  }
+
+  /* card section purple  */
+
+  .col-6-md{
+    flex-basis: calc((100% / 12) * 6);
+  }
+
+  /* sectio about us  */
+  .container-small{
+    padding-left: 30px;
+    padding-bottom: 50px;
   }
 }
 
 @media (max-width: 576px){
   *[class^='col-']{
     flex-basis: 100%;
+
   }
-}
+  
+  .name{
+    text-align: center;
+  }
+
+  .title-purple{
+    padding-left: 100px;
+    
+    padding-right: 150px;
+  }
+   
+  .description-section{
+    padding-left: 20px;
+  } 
+
+  .img-testimonial{
+    margin-left: 150px;
+  }
+
+  .font-white{
+    padding-top: 0;
+  }
+} 
+
