@@ -349,7 +349,6 @@ q{
   padding-right: 5px;
 }
 
-
 /* section get started  */
 .text-center{
   text-align: center;
@@ -389,6 +388,10 @@ q{
   padding-bottom: 60px;
 }
 
+
+.underline{
+  text-decoration: underline;
+}
 /* Responsive */
 
 @media (max-width:768px) {
