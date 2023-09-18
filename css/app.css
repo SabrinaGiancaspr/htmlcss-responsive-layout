@@ -113,7 +113,6 @@ figure > img {
   margin-top: 30px;
   padding-left: 40px;
   padding-right: 40px;
-
 }
 
 .button-purple{
@@ -202,7 +201,18 @@ figure > img {
   background-color: var(--purple);
   color: white;
   margin-top: 90px;
-  padding-bottom: 120px;
+  margin-bottom: 140px;
+  padding-bottom: 30px;
+}
+
+.col-img-purple{
+  padding-bottom: 65px;
+}
+
+.col-flex{
+  display: flex;
+  height: 100%;
+  align-self: flex-end;
 }
 
 .font-card {
@@ -290,7 +300,6 @@ q{
 .color-font-purple{
   color: var(--purple);
   padding-bottom: 10px;
-  padding-left: ;
 }
 
 .number{
@@ -379,8 +388,6 @@ q{
   color: var(--purple);
   padding-bottom: 60px;
 }
-
-
 
 /* Responsive */
 
